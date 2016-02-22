@@ -1,0 +1,76 @@
+body{
+    background-color:#efefef;
+    font-family: "Lato", "Helvetica Neue", sans-serif;
+}
+h1 { font-family: "Lobster", serif; font-size:5em;padding:30px 0 0 0; }
+.circles h1 {
+    font-size:8em;
+    padding: 0 0 30px 0;
+}
+.worldMap h1 {
+    color:#fff;
+}
+#map {
+    position: relative;
+    width: 800px; 
+    height: 600px;
+    margin:0 auto;
+    margin-top: -90px;
+}
+.gdp-circle, .carbon-circle {
+    width: 500px;
+    height:500px;
+    border-radius:50%;
+    background: #547980; /*change later*/
+    margin: 0 auto;
+    border: 15px solid #BDECB6;
+}
+.gdp-circle:hover, .carbon-circle:hover{
+    border: 15px solid #fff;
+}
+.gdp-circle p, .carbon-circle p {
+    font-family: "Lobster", serif;
+    color:#fff;
+    text-align:center;
+    word-break:keep-all;
+    font-size:3em;
+    padding: 150px 0 0 0;
+}
+.carbon-circle {
+    background: #333; /*change later*/
+    border-color: #111;
+}
+.carbon-circle h4 {
+    color:#fff;
+}
+/*find nice colour pallete */
+.circlesBg, .mapBg, .graphsBg {padding: 0 0 50px 0;}
+.circlesBg{background:#DC3B3B;}
+.mapBg{background:#1C6BA0;}
+.graphsBg{background:#eee;}
+
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+
+#loader {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    margin-top: -50px; 
+    margin-left: -100px; 
+    width: 200px; 
+    height: 100px;
+}
